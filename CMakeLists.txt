@@ -17,7 +17,7 @@ add_executable(drone
 	)
 	
 #PULL PICO STDLIB
-target_link_libraries(drone pico_stdlib hardware_i2c)
+target_link_libraries(drone pico_stdlib hardware_i2c hardware_uart)
 
 pico_enable_stdio_usb(drone 1)
 pico_enable_stdio_uart(drone 1)
