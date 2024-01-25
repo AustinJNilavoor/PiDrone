@@ -57,8 +57,8 @@ int main()
     i2c_init(i2c, 400 * 1000);
     gpio_set_function(I2C_SDA_PIN, GPIO_FUNC_I2C);
     gpio_set_function(I2C_SCL_PIN, GPIO_FUNC_I2C);
-    // gpio_pull_up(I2C_SDA_PIN);
-    // gpio_pull_up(I2C_SCL_PIN);
+    gpio_pull_up(I2C_SDA_PIN);
+    gpio_pull_up(I2C_SCL_PIN);
     bi_decl(bi_2pins_with_func(I2C_SDA_PIN, I2C_SCL_PIN, GPIO_FUNC_I2C));
     mpu6050_reset();
     int16_t acceleration[3], gyro[3], temp;
