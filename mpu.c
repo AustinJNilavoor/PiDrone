@@ -19,7 +19,7 @@ i2c_inst_t *i2c = i2c1;
 
 static void mpu6050_reset()
 {
-    uint8_t buf[] = {0x6B, 0x00};
+    uint8_t buf[] = {0x6B, 0x80};
     i2c_write_blocking(i2c, i2c_addr, buf, 2, false);
 }
 
@@ -53,6 +53,7 @@ static void mpu6050_read_raw(int16_t accel[3], int16_t gyro[3], int16_t *temp)
 int main()
 {
     stdio_init_all();
+    sleep_ms(1000);
     i2c_init(i2c, 400 * 1000);
     gpio_set_function(I2C_SDA_PIN, GPIO_FUNC_I2C);
     gpio_set_function(I2C_SCL_PIN, GPIO_FUNC_I2C);
