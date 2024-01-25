@@ -23,7 +23,7 @@ static void mpu6050_reset()
     i2c_write_blocking(i2c, i2c_addr, buf, 2, false);
 }
 
-static void mpu6050_read_raw(int16_t accel[3], int16_t gyro[3])
+static void mpu6050_read_raw(int16_t accel[3], int16_t gyro[3], int16_t *temp)
 {
     uint8_t buffer[6];
     uint8_t val = 0x3B;
@@ -43,6 +43,11 @@ static void mpu6050_read_raw(int16_t accel[3], int16_t gyro[3])
     {
         gyro[i] = (buffer[i * 2] << 8 | buffer[(i * 2) + 1]);
     }
+    val = 0x41;
+    i2c_write_blocking(i2c, i2c_addr, &val, 1, true);
+    i2c_read_blocking(i2c, i2c_addr, buffer, 2, false);  // False - finished with bus
+
+    *temp = buffer[0] << 8 | buffer[1];
 }
 
 int main()
@@ -60,9 +65,10 @@ int main()
 
     while (1)
     {
-        mpu6050_read_raw(acceleration, gyro);
+        mpu6050_read_raw(acceleration, gyro, &temp);
         printf("Acc. X = %d, Y = %d, Z = %d , new\n", acceleration[0], acceleration[1], acceleration[2]);
         printf("Gyro. X = %d, Y = %d, Z = %d\n", gyro[0], gyro[1], gyro[2]);
+        printf("Temp. = %f\n", (temp / 340.0) + 36.53);
 
         sleep_ms(100);
     }
