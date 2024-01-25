@@ -96,11 +96,11 @@ int main() {
     float acc_z_f;
 
     // Pins
-    const uint sda_pin = 16;
-    const uint scl_pin = 17;
+    const uint sda_pin = 14;
+    const uint scl_pin = 15;
 
     // Ports
-    i2c_inst_t *i2c = i2c0;
+    i2c_inst_t *i2c = i2c1;
 
     // Buffer to store raw reads
     uint8_t data[6];
