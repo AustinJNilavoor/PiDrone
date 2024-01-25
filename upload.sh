@@ -2,7 +2,7 @@
 cd build
 make
 cd ..
-echo "\n enter msg "
+echo "Enter commit message"
 read msg
 git add .
 git commit -m "$msg"
