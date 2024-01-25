@@ -82,13 +82,16 @@ int main()
 {
     stdio_init_all();
     i2c_setup();
+    uart_setup();
+    uint8_t data[4];
 
     while (1)
     {
         mpu6050_read_raw(acceleration, gyro);
         printf("Acc. X = %d, Y = %d, Z = %d , new\n", acceleration[0], acceleration[1], acceleration[2]);
         printf("Gyro. X = %d, Y = %d, Z = %d\n", gyro[0], gyro[1], gyro[2]);
-
+        uart_read(data);
+        printf("%d %c",data[0],data[1]);
         sleep_ms(100);
     }
 }
