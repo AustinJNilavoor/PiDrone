@@ -48,6 +48,7 @@ static void mpu6050_read_raw(int16_t accel[3], int16_t gyro[3])
 int main()
 {
     stdio_init_all();
+    sleep_ms(1000);
     i2c_init(i2c, 400 * 1000);
     gpio_set_function(I2C_SDA_PIN, GPIO_FUNC_I2C);
     gpio_set_function(I2C_SCL_PIN, GPIO_FUNC_I2C);
@@ -60,7 +61,7 @@ int main()
     while (1)
     {
         mpu6050_read_raw(acceleration, gyro);
-        printf("Acc. X = %d, Y = %d, Z = %d\n", acceleration[0], acceleration[1], acceleration[2]);
+        printf("Acc. X = %d, Y = %d, Z = %d , new\n", acceleration[0], acceleration[1], acceleration[2]);
         printf("Gyro. X = %d, Y = %d, Z = %d\n", gyro[0], gyro[1], gyro[2]);
 
         sleep_ms(100);
