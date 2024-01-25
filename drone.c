@@ -46,7 +46,7 @@ static void mpu6050_read_raw(int16_t accel[3], int16_t gyro[3], int16_t *temp)
     val = 0x41;
     i2c_write_blocking(i2c, i2c_addr, &val, 1, true);
     i2c_read_blocking(i2c, i2c_addr, buffer, 2, false);  // False - finished with bus
-
+    
     *temp = buffer[0] << 8 | buffer[1];
 }
 
@@ -54,11 +54,11 @@ int main()
 {
     stdio_init_all();
     sleep_ms(1000);
-    i2c_init(i2c, 100 * 1000);
+    i2c_init(i2c, 400 * 1000);
     gpio_set_function(I2C_SDA_PIN, GPIO_FUNC_I2C);
     gpio_set_function(I2C_SCL_PIN, GPIO_FUNC_I2C);
-    gpio_pull_up(I2C_SDA_PIN);
-    gpio_pull_up(I2C_SCL_PIN);
+    // gpio_pull_up(I2C_SDA_PIN);
+    // gpio_pull_up(I2C_SCL_PIN);
     bi_decl(bi_2pins_with_func(I2C_SDA_PIN, I2C_SCL_PIN, GPIO_FUNC_I2C));
     mpu6050_reset();
     int16_t acceleration[3], gyro[3], temp;
@@ -66,7 +66,7 @@ int main()
     while (1)
     {
         mpu6050_read_raw(acceleration, gyro, &temp);
-        printf("Acc. X = %f, Y = %f, Z = %f , new\n", acceleration[0], acceleration[1], acceleration[2]);
+        printf("Acc. X = %d, Y = %d, Z = %d , new\n", acceleration[0], acceleration[1], acceleration[2]);
         printf("Gyro. X = %d, Y = %d, Z = %d\n", gyro[0], gyro[1], gyro[2]);
         printf("Temp. = %f\n", (temp / 340.0) + 36.53);
 
