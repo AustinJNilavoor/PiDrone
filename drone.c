@@ -1,97 +1,86 @@
+/**
+ * Copyright (c) 2020 Raspberry Pi (Trading) Ltd.
+ *
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+
+
 #include "pico/stdlib.h"
-#include <stdio.h>
-#include <string.h>
-#include "pico/binary_info.h"
-#include "hardware/i2c.h"
 #include "hardware/uart.h"
+#include "hardware/irq.h"
 
-#define CWM_1 12
-#define CWM_2 21
-#define CCWM_1 3
-#define CCWM_2 16
 
-#define SDA_PIN 14
-#define SCL_PIN 15
+/// \tag::uart_advanced[]
 
-#define TX_PIN 0
-#define RX_PIN 1
+#define UART_ID uart0
+#define BAUD_RATE 115200
+#define DATA_BITS 8
+#define STOP_BITS 1
+#define PARITY    UART_PARITY_NONE
 
-static int i2c_addr = 0x68;
-i2c_inst_t *i2c = i2c1;
-int16_t acceleration[3], gyro[3];
+// We are using pins 0 and 1, but see the GPIO function select table in the
+// datasheet for information on which other pins can be used.
+#define UART_TX_PIN 0
+#define UART_RX_PIN 1
 
-static void mpu6050_reset()
-{
-    uint8_t buf[] = {0x6B, 0x00};
-    i2c_write_blocking(i2c, i2c_addr, buf, 2, false);
-}
+static int chars_rxed = 0;
 
-static void mpu6050_read_raw(int16_t accel[3], int16_t gyro[3])
-{
-    uint8_t buffer[6];
-    uint8_t val = 0x3B;
-
-    i2c_write_blocking(i2c, i2c_addr, &val, 1, true);
-    i2c_read_blocking(i2c, i2c_addr, buffer, 6, false);
-    for (int i = 0; i < 3; i++)
-    {
-        accel[i] = (buffer[i * 2] << 8 | buffer[(i * 2) + 1]);
-    }
-
-    val = 0x43;
-    i2c_write_blocking(i2c, i2c_addr, &val, 1, true);
-    i2c_read_blocking(i2c, i2c_addr, buffer, 6, false);
-
-    for (int i = 0; i < 3; i++)
-    {
-        gyro[i] = (buffer[i * 2] << 8 | buffer[(i * 2) + 1]);
+// RX interrupt handler
+void on_uart_rx() {
+    while (uart_is_readable(UART_ID)) {
+        uint8_t ch = uart_getc(UART_ID);
+        // Can we send it back?
+        if (uart_is_writable(UART_ID)) {
+            // Change it slightly first!
+            ch++;
+            uart_putc(UART_ID, ch);
+        }
+        chars_rxed++;
     }
 }
 
-static void i2c_setup()
-{
-    i2c_init(i2c, 400 * 1000);
-    gpio_set_function(SDA_PIN, GPIO_FUNC_I2C);
-    gpio_set_function(SCL_PIN, GPIO_FUNC_I2C);
-    gpio_pull_up(SDA_PIN);
-    gpio_pull_up(SCL_PIN);
-    bi_decl(bi_2pins_with_func(SDA_PIN, SCL_PIN, GPIO_FUNC_I2C));
-    mpu6050_reset();
-}
+int main() {
+    // Set up our UART with a basic baud rate.
+    uart_init(UART_ID, 2400);
 
-static void uart_setup()
-{
-    uart_init(uart0, 115200);
-    gpio_set_function(TX_PIN, GPIO_FUNC_UART);
-    gpio_set_function(RX_PIN, GPIO_FUNC_UART);
-}
+    // Set the TX and RX pins by using the function select on the GPIO
+    // Set datasheet for more information on function select
+    gpio_set_function(UART_TX_PIN, GPIO_FUNC_UART);
+    gpio_set_function(UART_RX_PIN, GPIO_FUNC_UART);
 
-// void on_uart_rx() {
-//     while (uart_is_readable(UART_ID)) {
-//         uint8_t ch = uart_getc(UART_ID);
-//         printf("%c",ch)
-//     }
-// }
+    // Actually, we want a different speed
+    // The call will return the actual baud rate selected, which will be as close as
+    // possible to that requested
+    int __unused actual = uart_set_baudrate(UART_ID, BAUD_RATE);
 
-static void uart_read(int8_t data[4]){
-    uart_read_blocking(uart0, data, 4);
+    // Set UART flow control CTS/RTS, we don't want these, so turn them off
+    uart_set_hw_flow(UART_ID, false, false);
 
-}
+    // Set our data format
+    uart_set_format(UART_ID, DATA_BITS, STOP_BITS, PARITY);
 
-int main()
-{
-    stdio_init_all();
-    i2c_setup();
-    uart_setup();
-    uint8_t data[4];
+    // Turn off FIFO's - we want to do this character by character
+    uart_set_fifo_enabled(UART_ID, false);
+
+    // Set up a RX interrupt
+    // We need to set up the handler first
+    // Select correct interrupt for the UART we are using
+    int UART_IRQ = UART_ID == uart0 ? UART0_IRQ : UART1_IRQ;
+
+    // And set up and enable the interrupt handlers
+    irq_set_exclusive_handler(UART_IRQ, on_uart_rx);
+    irq_set_enabled(UART_IRQ, true);
+
+    // Now enable the UART to send interrupts - RX only
+    uart_set_irq_enables(UART_ID, true, false);
+
+    // OK, all set up.
+    // Lets send a basic string out, and then run a loop and wait for RX interrupts
+    // The handler will count them, but also reflect the incoming data back with a slight change!
+    uart_puts(UART_ID, "\nHello, uart interrupts\n");
 
     while (1)
-    {
-        mpu6050_read_raw(acceleration, gyro);
-        printf("Acc. X = %d, Y = %d, Z = %d\n", acceleration[0], acceleration[1], acceleration[2]);
-        printf("Gyro. X = %d, Y = %d, Z = %d\n", gyro[0], gyro[1], gyro[2]);
-        // uart_read(data);
-        // printf("%d %c",data[0],data[1]);
-        sleep_ms(100);
-    }
+        tight_loop_contents();
 }
+
+/// \end:uart_advanced[]
