@@ -63,6 +63,7 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 CMakeFiles/drone.dir/drone.c.obj
  .bss.acceleration
                 0x0000000000000000        0x6 CMakeFiles/drone.dir/drone.c.obj
+ .bss.ch        0x0000000000000000        0x1 CMakeFiles/drone.dir/drone.c.obj
  .bss.gyro      0x0000000000000000        0x6 CMakeFiles/drone.dir/drone.c.obj
  .text          0x0000000000000000        0x0 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
@@ -1179,9 +1180,9 @@ Discarded input sections
                 0x0000000000000000       0x48 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
  .text.i2c_read_timeout_per_char_us
                 0x0000000000000000       0x48 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
- .text          0x0000000000000000        0x0 /tmp/ccDHkXHt.o
- .data          0x0000000000000000        0x0 /tmp/ccDHkXHt.o
- .bss           0x0000000000000000        0x0 /tmp/ccDHkXHt.o
+ .text          0x0000000000000000        0x0 /tmp/cc6WEqcT.o
+ .data          0x0000000000000000        0x0 /tmp/cc6WEqcT.o
+ .bss           0x0000000000000000        0x0 /tmp/cc6WEqcT.o
  .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x0000000000000000       0x10 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-atexit.o)
@@ -1445,11 +1446,11 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
 .boot2          0x0000000010000000      0x100
                 0x0000000010000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x0000000010000000      0x100 /tmp/ccDHkXHt.o
+ .boot2         0x0000000010000000      0x100 /tmp/cc6WEqcT.o
                 0x0000000010000100                __boot2_end__ = .
                 0x0000000000000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x0000000010000100     0x6eb0
+.text           0x0000000010000100     0x6ec8
                 0x0000000010000100                __logical_binary_start = .
  *(.vectors)
  .vectors       0x0000000010000100       0xd4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1511,600 +1512,600 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .text*)
  .text          0x00000000100002bc       0x98 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
  .text.on_uart_rx
-                0x0000000010000354       0x38 CMakeFiles/drone.dir/drone.c.obj
+                0x0000000010000354       0x50 CMakeFiles/drone.dir/drone.c.obj
  .text.startup.main
-                0x000000001000038c       0xa4 CMakeFiles/drone.dir/drone.c.obj
-                0x000000001000038c                main
+                0x00000000100003a4       0xa4 CMakeFiles/drone.dir/drone.c.obj
+                0x00000000100003a4                main
  .text.gpio_set_function
-                0x0000000010000430       0x30 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x0000000010000430                gpio_set_function
+                0x0000000010000448       0x30 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x0000000010000448                gpio_set_function
  .text.gpio_set_pulls
-                0x0000000010000460       0x30 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x0000000010000460                gpio_set_pulls
+                0x0000000010000478       0x30 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x0000000010000478                gpio_set_pulls
  .text.running_on_fpga
-                0x0000000010000490       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-                0x0000000010000490                running_on_fpga
+                0x00000000100004a8       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                0x00000000100004a8                running_on_fpga
  .text.hw_claim_or_assert
-                0x00000000100004a0       0x44 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x00000000100004a0                hw_claim_or_assert
+                0x00000000100004b8       0x44 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x00000000100004b8                hw_claim_or_assert
  .text.hw_claim_unused_from_range
-                0x00000000100004e4       0x9c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x00000000100004e4                hw_claim_unused_from_range
+                0x00000000100004fc       0x9c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x00000000100004fc                hw_claim_unused_from_range
  .text.spin_locks_reset
-                0x0000000010000580       0x1c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x0000000010000580                spin_locks_reset
+                0x0000000010000598       0x1c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x0000000010000598                spin_locks_reset
  .text.next_striped_spin_lock_num
-                0x000000001000059c       0x18 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x000000001000059c                next_striped_spin_lock_num
+                0x00000000100005b4       0x18 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x00000000100005b4                next_striped_spin_lock_num
  .text.spin_lock_claim_unused
-                0x00000000100005b4       0x20 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x00000000100005b4                spin_lock_claim_unused
+                0x00000000100005cc       0x20 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x00000000100005cc                spin_lock_claim_unused
  .text.irq_set_enabled
-                0x00000000100005d4       0x24 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100005d4                irq_set_enabled
+                0x00000000100005ec       0x24 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000100005ec                irq_set_enabled
  .text.irq_set_pending
-                0x00000000100005f8       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100005f8                irq_set_pending
+                0x0000000010000610       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000610                irq_set_pending
  .text.irq_has_shared_handler
-                0x0000000010000608       0x2c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000608                irq_has_shared_handler
+                0x0000000010000620       0x2c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000620                irq_has_shared_handler
  .text.irq_get_vtable_handler
-                0x0000000010000634       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000634                irq_get_vtable_handler
+                0x000000001000064c       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x000000001000064c                irq_get_vtable_handler
  .text.irq_set_exclusive_handler
-                0x0000000010000644       0x54 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000644                irq_set_exclusive_handler
+                0x000000001000065c       0x54 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x000000001000065c                irq_set_exclusive_handler
  .text.irq_add_shared_handler
-                0x0000000010000698      0x1e8 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000698                irq_add_shared_handler
+                0x00000000100006b0      0x1e8 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000100006b0                irq_add_shared_handler
  .text.irq_remove_handler
-                0x0000000010000880      0x1b0 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000880                irq_remove_handler
+                0x0000000010000898      0x1b0 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000898                irq_remove_handler
  .text.irq_add_tail_to_free_list
-                0x0000000010000a30       0xb4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000a30                irq_add_tail_to_free_list
+                0x0000000010000a48       0xb4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000a48                irq_add_tail_to_free_list
  .text.irq_init_priorities
-                0x0000000010000ae4       0x24 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000ae4                irq_init_priorities
+                0x0000000010000afc       0x24 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000afc                irq_init_priorities
  .text.user_irq_claim_unused
-                0x0000000010000b08       0x28 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000b08                user_irq_claim_unused
+                0x0000000010000b20       0x28 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000b20                user_irq_claim_unused
  .text.lock_init
-                0x0000000010000b30       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_sync/lock_core.c.obj
-                0x0000000010000b30                lock_init
+                0x0000000010000b48       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x0000000010000b48                lock_init
  .text.mutex_init
-                0x0000000010000b40       0x1c CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x0000000010000b40                mutex_init
+                0x0000000010000b58       0x1c CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x0000000010000b58                mutex_init
  .text.recursive_mutex_init
-                0x0000000010000b5c       0x1c CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x0000000010000b5c                recursive_mutex_init
+                0x0000000010000b74       0x1c CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x0000000010000b74                recursive_mutex_init
  .text.critical_section_init
-                0x0000000010000b78       0x20 CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_sync/critical_section.c.obj
-                0x0000000010000b78                critical_section_init
+                0x0000000010000b90       0x20 CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_sync/critical_section.c.obj
+                0x0000000010000b90                critical_section_init
  .text.critical_section_init_with_lock_num
-                0x0000000010000b98       0x14 CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_sync/critical_section.c.obj
-                0x0000000010000b98                critical_section_init_with_lock_num
+                0x0000000010000bb0       0x14 CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_sync/critical_section.c.obj
+                0x0000000010000bb0                critical_section_init_with_lock_num
  .text.timer_pool_entry_comparator
-                0x0000000010000bac       0x34 CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010000bac                timer_pool_entry_comparator
+                0x0000000010000bc4       0x34 CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000bc4                timer_pool_entry_comparator
  .text.sleep_until_callback
-                0x0000000010000be0       0x30 CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000bf8       0x30 CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_time/time.c.obj
  .text.add_alarm_under_lock.isra.0
-                0x0000000010000c10      0x100 CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000c28      0x100 CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_alarm_callback
-                0x0000000010000d10      0x1bc CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000d28      0x1bc CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_init_default
-                0x0000000010000ecc       0x6c CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010000ecc                alarm_pool_init_default
+                0x0000000010000ee4       0x6c CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000ee4                alarm_pool_init_default
  .text.alarm_pool_get_default
-                0x0000000010000f38        0x8 CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010000f38                alarm_pool_get_default
+                0x0000000010000f50        0x8 CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000f50                alarm_pool_get_default
  .text.alarm_pool_add_alarm_at
-                0x0000000010000f40      0x178 CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010000f40                alarm_pool_add_alarm_at
+                0x0000000010000f58      0x178 CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000f58                alarm_pool_add_alarm_at
  .text.alarm_pool_core_num
-                0x00000000100010b8        0x4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_time/time.c.obj
-                0x00000000100010b8                alarm_pool_core_num
+                0x00000000100010d0        0x4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000100010d0                alarm_pool_core_num
  .text.sleep_until
-                0x00000000100010bc       0xc4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_time/time.c.obj
-                0x00000000100010bc                sleep_until
+                0x00000000100010d4       0xc4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000100010d4                sleep_until
  .text.sleep_us
-                0x0000000010001180       0x24 CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010001180                sleep_us
+                0x0000000010001198       0x24 CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010001198                sleep_us
  .text.best_effort_wfe_or_timeout
-                0x00000000100011a4       0xd4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_time/time.c.obj
-                0x00000000100011a4                best_effort_wfe_or_timeout
+                0x00000000100011bc       0xd4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000100011bc                best_effort_wfe_or_timeout
  .text.hardware_alarm_irq_handler
-                0x0000000010001278       0xbc CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001290       0xbc CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.hardware_alarm_claim
-                0x0000000010001334       0x18 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001334                hardware_alarm_claim
+                0x000000001000134c       0x18 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x000000001000134c                hardware_alarm_claim
  .text.time_us_64
-                0x000000001000134c       0x14 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x000000001000134c                time_us_64
+                0x0000000010001364       0x14 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001364                time_us_64
  .text.busy_wait_us
-                0x0000000010001360       0x54 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001360                busy_wait_us
+                0x0000000010001378       0x54 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001378                busy_wait_us
  .text.busy_wait_until
-                0x00000000100013b4       0x20 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x00000000100013b4                busy_wait_until
+                0x00000000100013cc       0x20 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100013cc                busy_wait_until
  .text.hardware_alarm_set_callback
-                0x00000000100013d4       0x8c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x00000000100013d4                hardware_alarm_set_callback
+                0x00000000100013ec       0x8c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100013ec                hardware_alarm_set_callback
  .text.hardware_alarm_set_target
-                0x0000000010001460       0xd4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001460                hardware_alarm_set_target
+                0x0000000010001478       0xd4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001478                hardware_alarm_set_target
  .text.hardware_alarm_cancel
-                0x0000000010001534       0x3c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001534                hardware_alarm_cancel
+                0x000000001000154c       0x3c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x000000001000154c                hardware_alarm_cancel
  .text.ph_merge_nodes
-                0x0000000010001570       0x68 CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001588       0x68 CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_post_alloc_init
-                0x00000000100015d8       0x3c CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x00000000100015d8                ph_post_alloc_init
+                0x00000000100015f0       0x3c CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x00000000100015f0                ph_post_alloc_init
  .text.ph_merge_two_pass
-                0x0000000010001614       0x90 CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010001614                ph_merge_two_pass
+                0x000000001000162c       0x90 CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x000000001000162c                ph_merge_two_pass
  .text.ph_remove_any_head
-                0x00000000100016a4      0x100 CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x00000000100016bc      0x100 CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_remove_head
-                0x00000000100017a4      0x104 CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x00000000100017a4                ph_remove_head
+                0x00000000100017bc      0x104 CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x00000000100017bc                ph_remove_head
  .text.ph_remove_and_free_node
-                0x00000000100018a8       0x7c CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x00000000100018a8                ph_remove_and_free_node
+                0x00000000100018c0       0x7c CMakeFiles/drone.dir/home/austin/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x00000000100018c0                ph_remove_and_free_node
  .text.uart_init
-                0x0000000010001924      0x188 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-                0x0000000010001924                uart_init
+                0x000000001000193c      0x188 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                0x000000001000193c                uart_init
  .text.clocks_init
-                0x0000000010001aac      0x2d0 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x0000000010001aac                clocks_init
+                0x0000000010001ac4      0x2d0 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x0000000010001ac4                clocks_init
  .text.clock_get_hz
-                0x0000000010001d7c        0xc CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x0000000010001d7c                clock_get_hz
+                0x0000000010001d94        0xc CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x0000000010001d94                clock_get_hz
  .text.pll_init
-                0x0000000010001d88       0xa0 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-                0x0000000010001d88                pll_init
+                0x0000000010001da0       0xa0 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x0000000010001da0                pll_init
  .text.watchdog_start_tick
-                0x0000000010001e28       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x0000000010001e28                watchdog_start_tick
+                0x0000000010001e40       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x0000000010001e40                watchdog_start_tick
  .text.watchdog_reboot
-                0x0000000010001e38       0x98 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x0000000010001e38                watchdog_reboot
+                0x0000000010001e50       0x98 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x0000000010001e50                watchdog_reboot
  .text.xosc_init
-                0x0000000010001ed0       0x28 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-                0x0000000010001ed0                xosc_init
+                0x0000000010001ee8       0x28 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x0000000010001ee8                xosc_init
  .text.runtime_init
-                0x0000000010001ef8       0xf0 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001ef8                runtime_init
- .text._exit    0x0000000010001fe8        0x4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001fe8                _exit
- .text.exit     0x0000000010001fec        0x8 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001fec                exit
- .text.panic    0x0000000010001ff4       0x30 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001ff4                panic
+                0x0000000010001f10       0xf0 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001f10                runtime_init
+ .text._exit    0x0000000010002000        0x4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010002000                _exit
+ .text.exit     0x0000000010002004        0x8 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010002004                exit
+ .text.panic    0x000000001000200c       0x30 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x000000001000200c                panic
  .text.hard_assertion_failure
-                0x0000000010002024        0xc CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010002024                hard_assertion_failure
+                0x000000001000203c        0xc CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x000000001000203c                hard_assertion_failure
  .text._out_null
-                0x0000000010002030        0x4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010002048        0x4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_rev
-                0x0000000010002034       0x9c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x000000001000204c       0x9c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_format
-                0x00000000100020d0      0x1cc CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000000100020e8      0x1cc CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_char
-                0x000000001000229c       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000000100022b4       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_fct
-                0x00000000100022ac       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._etoa    0x00000000100022bc      0x44c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._ftoa    0x0000000010002708      0x398 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000000100022c4       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._etoa    0x00000000100022d4      0x44c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._ftoa    0x0000000010002720      0x398 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._vsnprintf
-                0x0000000010002aa0      0xb04 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010002ab8      0xb04 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.vfctprintf
-                0x00000000100035a4       0x20 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x00000000100035a4                vfctprintf
+                0x00000000100035bc       0x20 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000000100035bc                vfctprintf
  .text.weak_raw_vprintf
-                0x00000000100035c4       0x30 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x00000000100035c4                weak_raw_vprintf
- .text          0x00000000100035f4       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x00000000100035dc       0x30 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000000100035dc                weak_raw_vprintf
+ .text          0x000000001000360c       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.rom_func_lookup
-                0x0000000010003604       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x0000000010003604                rom_func_lookup
+                0x000000001000361c       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x000000001000361c                rom_func_lookup
  .text.rom_data_lookup
-                0x0000000010003614       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x0000000010003614                rom_data_lookup
+                0x000000001000362c       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x000000001000362c                rom_data_lookup
  .text.rom_funcs_lookup
-                0x0000000010003624       0x44 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x0000000010003624                rom_funcs_lookup
+                0x000000001000363c       0x44 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x000000001000363c                rom_funcs_lookup
  .text.__wrap___aeabi_idiv
-                0x0000000010003668       0x50 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x0000000010003668                __wrap___aeabi_idivmod
-                0x0000000010003668                divmod_s32s32
-                0x0000000010003668                div_s32s32
-                0x0000000010003668                __wrap___aeabi_idiv
-                0x0000000010003670                divmod_s32s32_unsafe
-                0x000000001000369c                divmod_s32s32_savestate
+                0x0000000010003680       0x50 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x0000000010003680                __wrap___aeabi_idivmod
+                0x0000000010003680                divmod_s32s32
+                0x0000000010003680                div_s32s32
+                0x0000000010003680                __wrap___aeabi_idiv
+                0x0000000010003688                divmod_s32s32_unsafe
+                0x00000000100036b4                divmod_s32s32_savestate
  .text.__wrap___aeabi_uidiv
-                0x00000000100036b8       0x4c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x00000000100036b8                __wrap___aeabi_uidiv
-                0x00000000100036b8                __wrap___aeabi_uidivmod
-                0x00000000100036b8                div_u32u32
-                0x00000000100036b8                divmod_u32u32
-                0x00000000100036c0                divmod_u32u32_unsafe
-                0x00000000100036e8                divmod_u32u32_savestate
+                0x00000000100036d0       0x4c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x00000000100036d0                __wrap___aeabi_uidiv
+                0x00000000100036d0                __wrap___aeabi_uidivmod
+                0x00000000100036d0                div_u32u32
+                0x00000000100036d0                divmod_u32u32
+                0x00000000100036d8                divmod_u32u32_unsafe
+                0x0000000010003700                divmod_u32u32_savestate
  .text.__wrap___aeabi_ldiv
-                0x0000000010003704      0x424 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x0000000010003704                div_s64s64
-                0x0000000010003704                divmod_s64s64
-                0x0000000010003704                __wrap___aeabi_ldivmod
-                0x0000000010003734                div_u64u64
-                0x0000000010003734                divmod_u64u64
-                0x0000000010003734                __wrap___aeabi_uldivmod
-                0x0000000010003744                divmod_u64u64_savestate
-                0x0000000010003764                divmod_s64s64_unsafe
-                0x00000000100037ec                divmod_u64u64_unsafe
+                0x000000001000371c      0x424 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x000000001000371c                div_s64s64
+                0x000000001000371c                divmod_s64s64
+                0x000000001000371c                __wrap___aeabi_ldivmod
+                0x000000001000374c                div_u64u64
+                0x000000001000374c                divmod_u64u64
+                0x000000001000374c                __wrap___aeabi_uldivmod
+                0x000000001000375c                divmod_u64u64_savestate
+                0x000000001000377c                divmod_s64s64_unsafe
+                0x0000000010003804                divmod_u64u64_unsafe
  .text.__wrap___aeabi_darithmetic
-                0x0000000010003b28       0x80 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003b28                __wrap___aeabi_drsub
-                0x0000000010003b2e                __wrap___aeabi_dsub
-                0x0000000010003b40                __wrap___aeabi_dadd
-                0x0000000010003b52                __wrap___aeabi_ddiv
-                0x0000000010003b8e                __wrap___aeabi_dmul
+                0x0000000010003b40       0x80 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003b40                __wrap___aeabi_drsub
+                0x0000000010003b46                __wrap___aeabi_dsub
+                0x0000000010003b58                __wrap___aeabi_dadd
+                0x0000000010003b6a                __wrap___aeabi_ddiv
+                0x0000000010003ba6                __wrap___aeabi_dmul
  .text.__wrap___aeabi_cdcmple
-                0x0000000010003ba8       0x6c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003ba8                __wrap___aeabi_cdrcmple
-                0x0000000010003bb8                __wrap___aeabi_cdcmple
-                0x0000000010003bb8                __wrap___aeabi_cdcmpeq
+                0x0000000010003bc0       0x6c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003bc0                __wrap___aeabi_cdrcmple
+                0x0000000010003bd0                __wrap___aeabi_cdcmple
+                0x0000000010003bd0                __wrap___aeabi_cdcmpeq
  .text.__wrap___aeabi_dcmplt
-                0x0000000010003c14        0xc CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003c14                __wrap___aeabi_dcmplt
+                0x0000000010003c2c        0xc CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003c2c                __wrap___aeabi_dcmplt
  .text.__wrap___aeabi_dcmple
-                0x0000000010003c20       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003c20                __wrap___aeabi_dcmple
+                0x0000000010003c38       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003c38                __wrap___aeabi_dcmple
  .text.__wrap___aeabi_dcmpge
-                0x0000000010003c30       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003c30                __wrap___aeabi_dcmpge
+                0x0000000010003c48       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003c48                __wrap___aeabi_dcmpge
  .text.__wrap___aeabi_dcmpgt
-                0x0000000010003c40        0xa CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003c40                __wrap___aeabi_dcmpgt
+                0x0000000010003c58        0xa CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003c58                __wrap___aeabi_dcmpgt
  .text.__wrap___aeabi_dcmpun
-                0x0000000010003c4a       0x1c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003c4a                __wrap___aeabi_dcmpun
- *fill*         0x0000000010003c66        0x2 
+                0x0000000010003c62       0x1c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003c62                __wrap___aeabi_dcmpun
+ *fill*         0x0000000010003c7e        0x2 
  .text.__wrap___aeabi_i2d
-                0x0000000010003c68       0x38 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003c68                __wrap___aeabi_ui2d
-                0x0000000010003c70                __wrap___aeabi_i2d
+                0x0000000010003c80       0x38 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003c80                __wrap___aeabi_ui2d
+                0x0000000010003c88                __wrap___aeabi_i2d
  .text.__wrap___aeabi_d2iz
-                0x0000000010003ca0       0x48 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003ca0                __wrap___aeabi_d2iz
-                0x0000000010003ca0                double2int_z
+                0x0000000010003cb8       0x48 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003cb8                __wrap___aeabi_d2iz
+                0x0000000010003cb8                double2int_z
  .text.__wrap___aeabi_d2uiz
-                0x0000000010003ce8       0x18 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003ce8                double2uint
-                0x0000000010003ce8                __wrap___aeabi_d2uiz
+                0x0000000010003d00       0x18 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003d00                double2uint
+                0x0000000010003d00                __wrap___aeabi_d2uiz
  .text.__aeabi_double_init
-                0x0000000010003d00       0x94 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x0000000010003d00                __aeabi_double_init
+                0x0000000010003d18       0x94 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x0000000010003d18                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x0000000010003d94       0x2c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010003d94                double_table_shim_on_use_helper
+                0x0000000010003dac       0x2c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010003dac                double_table_shim_on_use_helper
  .text.__wrap___aeabi_dsub
-                0x0000000010003dc0       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010003dc0                drsub_shim
-                0x0000000010003dc6                dsub_shim
+                0x0000000010003dd8       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010003dd8                drsub_shim
+                0x0000000010003dde                dsub_shim
  .text.dadd_shim
-                0x0000000010003dd0      0x15c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010003dd0                dadd_shim
+                0x0000000010003de8      0x15c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010003de8                dadd_shim
  .text.dmul_shim
-                0x0000000010003f2c      0x15c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010003f2c                dmul_shim
+                0x0000000010003f44      0x15c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010003f44                dmul_shim
  .text.ddiv_shim
-                0x0000000010004088      0x1b0 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010004088                ddiv_shim
+                0x00000000100040a0      0x1b0 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x00000000100040a0                ddiv_shim
  .text.double2uint_shim
-                0x0000000010004238        0xe CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010004238                double2uint_shim
-                0x000000001000423a                double2ufix_shim
- *fill*         0x0000000010004246        0x2 
+                0x0000000010004250        0xe CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010004250                double2uint_shim
+                0x0000000010004252                double2ufix_shim
+ *fill*         0x000000001000425e        0x2 
  .text.double2uint64_shim
-                0x0000000010004248       0x70 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010004248                double2uint64_shim
-                0x000000001000424a                double2ufix64_shim
-                0x000000001000426a                d2fix_a
+                0x0000000010004260       0x70 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010004260                double2uint64_shim
+                0x0000000010004262                double2ufix64_shim
+                0x0000000010004282                d2fix_a
  .text.dunpacks
-                0x00000000100042b8       0x3c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x00000000100042b8                dunpacks
+                0x00000000100042d0       0x3c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x00000000100042d0                dunpacks
  .text.__aeabi_lmul
-                0x00000000100042f4       0x32 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-                0x00000000100042f4                __wrap___aeabi_lmul
- *fill*         0x0000000010004326        0x2 
+                0x000000001000430c       0x32 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+                0x000000001000430c                __wrap___aeabi_lmul
+ *fill*         0x000000001000433e        0x2 
  .text.__aeabi_float_init
-                0x0000000010004328       0x64 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x0000000010004328                __aeabi_float_init
+                0x0000000010004340       0x64 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x0000000010004340                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x000000001000438c       0x2c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-                0x000000001000438c                float_table_shim_on_use_helper
- .text          0x00000000100043b8       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x00000000100043b8                __aeabi_mem_init
- .text.memset   0x00000000100043c8        0xc CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x00000000100043c8                __wrap_memset
- .text.memcpy   0x00000000100043d4        0xc CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x00000000100043d4                __wrap___aeabi_memcpy
-                0x00000000100043d4                __wrap_memcpy
+                0x00000000100043a4       0x2c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x00000000100043a4                float_table_shim_on_use_helper
+ .text          0x00000000100043d0       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x00000000100043d0                __aeabi_mem_init
+ .text.memset   0x00000000100043e0        0xc CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x00000000100043e0                __wrap_memset
+ .text.memcpy   0x00000000100043ec        0xc CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x00000000100043ec                __wrap___aeabi_memcpy
+                0x00000000100043ec                __wrap_memcpy
  .text.stdio_out_chars_no_crlf
-                0x00000000100043e0       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000100043f8       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_out_chars_crlf
-                0x00000000100043f0       0xb4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004408       0xb4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_buffered_printer
-                0x00000000100044a4       0x64 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000100044bc       0x64 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_put_string.isra.0
-                0x0000000010004508       0xfc CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004520       0xfc CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.__wrap_putchar
-                0x0000000010004604       0x98 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010004604                __wrap_putchar
+                0x000000001000461c       0x98 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x000000001000461c                __wrap_putchar
  .text.__wrap_puts
-                0x000000001000469c       0x3c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x000000001000469c                __wrap_puts
+                0x00000000100046b4       0x3c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000100046b4                __wrap_puts
  .text.stdio_set_driver_enabled
-                0x00000000100046d8       0x30 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x00000000100046d8                stdio_set_driver_enabled
+                0x00000000100046f0       0x30 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000100046f0                stdio_set_driver_enabled
  .text.__wrap_vprintf
-                0x0000000010004708       0xd8 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010004708                __wrap_vprintf
+                0x0000000010004720       0xd8 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004720                __wrap_vprintf
  .text.__wrap_printf
-                0x00000000100047e0       0x18 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x00000000100047e0                __wrap_printf
+                0x00000000100047f8       0x18 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000100047f8                __wrap_printf
  .text.stdio_init_all
-                0x00000000100047f8       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x00000000100047f8                stdio_init_all
+                0x0000000010004810       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004810                stdio_init_all
  .text.stdio_uart_out_chars
-                0x0000000010004808       0x4c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010004820       0x4c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .text.stdio_uart_in_chars
-                0x0000000010004854       0x84 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x0000000010004854                stdio_uart_in_chars
+                0x000000001000486c       0x84 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x000000001000486c                stdio_uart_in_chars
  .text.on_uart_rx
-                0x00000000100048d8       0x28 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x00000000100048f0       0x28 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .text.stdio_uart_set_chars_available_callback
-                0x0000000010004900       0x8c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010004918       0x8c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .text.stdio_uart_init
-                0x000000001000498c       0x48 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x000000001000498c                stdio_uart_init
+                0x00000000100049a4       0x48 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x00000000100049a4                stdio_uart_init
  .text.resetd_init
-                0x00000000100049d4        0x4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x00000000100049ec        0x4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_reset
-                0x00000000100049d8        0xc CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x00000000100049f0        0xc CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_open
-                0x00000000100049e4       0x28 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x00000000100049fc       0x28 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_xfer_cb
-                0x0000000010004a0c        0x4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010004a24        0x4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_control_xfer_cb
-                0x0000000010004a10       0x64 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010004a28       0x64 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.usbd_app_driver_get_cb
-                0x0000000010004a74        0xc CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-                0x0000000010004a74                usbd_app_driver_get_cb
+                0x0000000010004a8c        0xc CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010004a8c                usbd_app_driver_get_cb
  .text.tud_cdc_line_coding_cb
-                0x0000000010004a80       0x34 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-                0x0000000010004a80                tud_cdc_line_coding_cb
+                0x0000000010004a98       0x34 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010004a98                tud_cdc_line_coding_cb
  .text.stdio_usb_set_chars_available_callback
-                0x0000000010004ab4       0x14 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x0000000010004ab4                stdio_usb_set_chars_available_callback
- .text.usb_irq  0x0000000010004ac8       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010004acc       0x14 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010004acc                stdio_usb_set_chars_available_callback
+ .text.usb_irq  0x0000000010004ae0       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.timer_task
-                0x0000000010004ad8       0x54 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010004af0       0x54 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.stdio_usb_in_chars
-                0x0000000010004b2c       0x90 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x0000000010004b2c                stdio_usb_in_chars
+                0x0000000010004b44       0x90 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010004b44                stdio_usb_in_chars
  .text.stdio_usb_out_chars
-                0x0000000010004bbc      0x100 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010004bd4      0x100 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.low_priority_worker_irq
-                0x0000000010004cbc       0xa8 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010004cd4       0xa8 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.tud_cdc_rx_cb
-                0x0000000010004d64       0x20 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x0000000010004d64                tud_cdc_rx_cb
+                0x0000000010004d7c       0x20 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010004d7c                tud_cdc_rx_cb
  .text.stdio_usb_init
-                0x0000000010004d84       0xdc CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x0000000010004d84                stdio_usb_init
+                0x0000000010004d9c       0xdc CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010004d9c                stdio_usb_init
  .text.tud_descriptor_device_cb
-                0x0000000010004e60        0x8 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x0000000010004e60                tud_descriptor_device_cb
+                0x0000000010004e78        0x8 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010004e78                tud_descriptor_device_cb
  .text.tud_descriptor_configuration_cb
-                0x0000000010004e68        0x8 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x0000000010004e68                tud_descriptor_configuration_cb
+                0x0000000010004e80        0x8 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010004e80                tud_descriptor_configuration_cb
  .text.tud_descriptor_string_cb
-                0x0000000010004e70       0x74 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x0000000010004e70                tud_descriptor_string_cb
+                0x0000000010004e88       0x74 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010004e88                tud_descriptor_string_cb
  .text.startup._retrieve_unique_id_on_boot
-                0x0000000010004ee4       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x0000000010004efc       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .text.pico_get_unique_board_id_string
-                0x0000000010004ef4      0x1a8 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
-                0x0000000010004ef4                pico_get_unique_board_id_string
+                0x0000000010004f0c      0x1a8 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x0000000010004f0c                pico_get_unique_board_id_string
  .text.flash_get_unique_id
-                0x000000001000509c       0x40 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
-                0x000000001000509c                flash_get_unique_id
+                0x00000000100050b4       0x40 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x00000000100050b4                flash_get_unique_id
  .text.dcd_int_enable
-                0x00000000100050dc        0xc CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100050dc                dcd_int_enable
+                0x00000000100050f4        0xc CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000100050f4                dcd_int_enable
  .text.dcd_set_address
-                0x00000000100050e8       0x14 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100050e8                dcd_set_address
+                0x0000000010005100       0x14 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010005100                dcd_set_address
  .text.dcd_connect
-                0x00000000100050fc       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100050fc                dcd_connect
+                0x0000000010005114       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010005114                dcd_connect
  .text.dcd_init
-                0x000000001000510c       0x98 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x000000001000510c                dcd_init
+                0x0000000010005124       0x98 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010005124                dcd_init
  .text.dcd_edpt0_status_complete
-                0x00000000100051a4       0x1c CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100051a4                dcd_edpt0_status_complete
+                0x00000000100051bc       0x1c CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000100051bc                dcd_edpt0_status_complete
  .text.dcd_edpt_open
-                0x00000000100051c0      0x108 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100051c0                dcd_edpt_open
+                0x00000000100051d8      0x108 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000100051d8                dcd_edpt_open
  .text.dcd_edpt_close_all
-                0x00000000100052c8        0x8 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100052c8                dcd_edpt_close_all
+                0x00000000100052e0        0x8 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000100052e0                dcd_edpt_close_all
  .text.dcd_edpt_xfer
-                0x00000000100052d0       0x24 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100052d0                dcd_edpt_xfer
+                0x00000000100052e8       0x24 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x00000000100052e8                dcd_edpt_xfer
  .text.dcd_edpt_stall
-                0x00000000100052f4       0x38 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x00000000100052f4                dcd_edpt_stall
+                0x000000001000530c       0x38 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x000000001000530c                dcd_edpt_stall
  .text.dcd_edpt_clear_stall
-                0x000000001000532c       0x30 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x000000001000532c                dcd_edpt_clear_stall
+                0x0000000010005344       0x30 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010005344                dcd_edpt_clear_stall
  .text.rp2040_usb_init
-                0x000000001000535c       0x4c CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x000000001000535c                rp2040_usb_init
+                0x0000000010005374       0x4c CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000010005374                rp2040_usb_init
  .text.hw_endpoint_xfer_start
-                0x00000000100053a8       0x50 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x00000000100053a8                hw_endpoint_xfer_start
+                0x00000000100053c0       0x50 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x00000000100053c0                hw_endpoint_xfer_start
  .text.tud_mounted
-                0x00000000100053f8       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100053f8                tud_mounted
+                0x0000000010005410       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005410                tud_mounted
  .text.tud_suspended
-                0x0000000010005408       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005408                tud_suspended
+                0x0000000010005420       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005420                tud_suspended
  .text.tud_inited
-                0x0000000010005418       0x14 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005418                tud_inited
+                0x0000000010005430       0x14 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005430                tud_inited
  .text.tud_init
-                0x000000001000542c       0xe4 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x000000001000542c                tud_init
+                0x0000000010005444       0xe4 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005444                tud_init
  .text.tud_task_ext
-                0x0000000010005510      0x854 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005510                tud_task_ext
+                0x0000000010005528      0x854 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005528                tud_task_ext
  .text.usbd_open_edpt_pair
-                0x0000000010005d64       0x9c CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005d64                usbd_open_edpt_pair
+                0x0000000010005d7c       0x9c CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005d7c                usbd_open_edpt_pair
  .text.usbd_defer_func
-                0x0000000010005e00       0x48 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005e00                usbd_defer_func
+                0x0000000010005e18       0x48 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005e18                usbd_defer_func
  .text.usbd_edpt_open
-                0x0000000010005e48       0x34 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005e48                usbd_edpt_open
+                0x0000000010005e60       0x34 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005e60                usbd_edpt_open
  .text.usbd_edpt_claim
-                0x0000000010005e7c       0x28 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005e7c                usbd_edpt_claim
+                0x0000000010005e94       0x28 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005e94                usbd_edpt_claim
  .text.usbd_edpt_release
-                0x0000000010005ea4       0x28 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005ea4                usbd_edpt_release
+                0x0000000010005ebc       0x28 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005ebc                usbd_edpt_release
  .text.usbd_edpt_xfer
-                0x0000000010005ecc       0x4c CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005ecc                usbd_edpt_xfer
+                0x0000000010005ee4       0x4c CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005ee4                usbd_edpt_xfer
  .text.tud_control_status
-                0x0000000010005f18       0x30 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010005f18                tud_control_status
+                0x0000000010005f30       0x30 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010005f30                tud_control_status
  .text.tud_control_xfer
-                0x0000000010005f48       0xbc CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010005f48                tud_control_xfer
+                0x0000000010005f60       0xbc CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010005f60                tud_control_xfer
  .text.usbd_control_reset
-                0x0000000010006004       0x14 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010006004                usbd_control_reset
+                0x000000001000601c       0x14 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x000000001000601c                usbd_control_reset
  .text.usbd_control_set_complete_callback
-                0x0000000010006018        0xc CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010006018                usbd_control_set_complete_callback
+                0x0000000010006030        0xc CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010006030                usbd_control_set_complete_callback
  .text.usbd_control_set_request
-                0x0000000010006024       0x1c CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010006024                usbd_control_set_request
+                0x000000001000603c       0x1c CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x000000001000603c                usbd_control_set_request
  .text.usbd_control_xfer_cb
-                0x0000000010006040       0xfc CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010006040                usbd_control_xfer_cb
+                0x0000000010006058       0xfc CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010006058                usbd_control_xfer_cb
  .text.tud_cdc_n_connected
-                0x000000001000613c       0x30 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x000000001000613c                tud_cdc_n_connected
+                0x0000000010006154       0x30 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006154                tud_cdc_n_connected
  .text.tud_cdc_n_available
-                0x000000001000616c       0x18 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x000000001000616c                tud_cdc_n_available
+                0x0000000010006184       0x18 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006184                tud_cdc_n_available
  .text.tud_cdc_n_read
-                0x0000000010006184       0x70 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006184                tud_cdc_n_read
+                0x000000001000619c       0x70 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x000000001000619c                tud_cdc_n_read
  .text.tud_cdc_n_write_flush
-                0x00000000100061f4       0x78 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000100061f4                tud_cdc_n_write_flush
+                0x000000001000620c       0x78 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x000000001000620c                tud_cdc_n_write_flush
  .text.tud_cdc_n_write
-                0x000000001000626c       0x34 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x000000001000626c                tud_cdc_n_write
+                0x0000000010006284       0x34 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006284                tud_cdc_n_write
  .text.tud_cdc_n_write_available
-                0x00000000100062a0       0x18 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000100062a0                tud_cdc_n_write_available
+                0x00000000100062b8       0x18 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x00000000100062b8                tud_cdc_n_write_available
  .text.cdcd_init
-                0x00000000100062b8       0x7c CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x00000000100062b8                cdcd_init
+                0x00000000100062d0       0x7c CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x00000000100062d0                cdcd_init
  .text.cdcd_reset
-                0x0000000010006334       0x2c CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006334                cdcd_reset
+                0x000000001000634c       0x2c CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x000000001000634c                cdcd_reset
  .text.cdcd_open
-                0x0000000010006360       0xe8 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006360                cdcd_open
+                0x0000000010006378       0xe8 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006378                cdcd_open
  .text.cdcd_control_xfer_cb
-                0x0000000010006448       0xe4 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010006448                cdcd_control_xfer_cb
+                0x0000000010006460       0xe4 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006460                cdcd_control_xfer_cb
  .text.cdcd_xfer_cb
-                0x000000001000652c      0x148 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x000000001000652c                cdcd_xfer_cb
+                0x0000000010006544      0x148 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010006544                cdcd_xfer_cb
  .text.tusb_init
-                0x0000000010006674        0xc CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010006674                tusb_init
+                0x000000001000668c        0xc CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x000000001000668c                tusb_init
  .text.tusb_inited
-                0x0000000010006680        0x8 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010006680                tusb_inited
+                0x0000000010006698        0x8 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x0000000010006698                tusb_inited
  .text.tu_edpt_claim
-                0x0000000010006688       0x50 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010006688                tu_edpt_claim
+                0x00000000100066a0       0x50 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x00000000100066a0                tu_edpt_claim
  .text.tu_edpt_release
-                0x00000000100066d8       0x38 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x00000000100066d8                tu_edpt_release
+                0x00000000100066f0       0x38 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x00000000100066f0                tu_edpt_release
  .text.tu_edpt_validate
-                0x0000000010006710       0x78 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010006710                tu_edpt_validate
+                0x0000000010006728       0x78 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x0000000010006728                tu_edpt_validate
  .text.tu_edpt_bind_driver
-                0x0000000010006788       0x34 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010006788                tu_edpt_bind_driver
+                0x00000000100067a0       0x34 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x00000000100067a0                tu_edpt_bind_driver
  .text.tu_fifo_config
-                0x00000000100067bc       0x70 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x00000000100067bc                tu_fifo_config
+                0x00000000100067d4       0x70 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000100067d4                tu_fifo_config
  .text.tu_fifo_count
-                0x000000001000682c       0x2c CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x000000001000682c                tu_fifo_count
+                0x0000000010006844       0x2c CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010006844                tu_fifo_count
  .text.tu_fifo_empty
-                0x0000000010006858       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006858                tu_fifo_empty
+                0x0000000010006870       0x10 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010006870                tu_fifo_empty
  .text.tu_fifo_remaining
-                0x0000000010006868       0x2c CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006868                tu_fifo_remaining
+                0x0000000010006880       0x2c CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010006880                tu_fifo_remaining
  .text.tu_fifo_read
-                0x0000000010006894       0xa0 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006894                tu_fifo_read
+                0x00000000100068ac       0xa0 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000100068ac                tu_fifo_read
  .text.tu_fifo_read_n
-                0x0000000010006934       0xec CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006934                tu_fifo_read_n
+                0x000000001000694c       0xec CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x000000001000694c                tu_fifo_read_n
  .text.tu_fifo_write
-                0x0000000010006a20       0x88 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006a20                tu_fifo_write
+                0x0000000010006a38       0x88 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010006a38                tu_fifo_write
  .text.tu_fifo_write_n
-                0x0000000010006aa8      0x168 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006aa8                tu_fifo_write_n
+                0x0000000010006ac0      0x168 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010006ac0                tu_fifo_write_n
  .text.tu_fifo_clear
-                0x0000000010006c10       0x40 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006c10                tu_fifo_clear
+                0x0000000010006c28       0x40 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010006c28                tu_fifo_clear
  .text.tu_fifo_set_overwritable
-                0x0000000010006c50       0x48 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006c50                tu_fifo_set_overwritable
+                0x0000000010006c68       0x48 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010006c68                tu_fifo_set_overwritable
  .text.i2c_set_baudrate
-                0x0000000010006c98       0xc4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
-                0x0000000010006c98                i2c_set_baudrate
+                0x0000000010006cb0       0xc4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+                0x0000000010006cb0                i2c_set_baudrate
  .text.i2c_init
-                0x0000000010006d5c       0x54 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
-                0x0000000010006d5c                i2c_init
+                0x0000000010006d74       0x54 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+                0x0000000010006d74                i2c_init
  .text.i2c_write_blocking
-                0x0000000010006db0       0xd0 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
-                0x0000000010006db0                i2c_write_blocking
- .text          0x0000000010006e80       0x5c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
-                0x0000000010006e80                strlen
+                0x0000000010006dc8       0xd0 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+                0x0000000010006dc8                i2c_write_blocking
+ .text          0x0000000010006e98       0x5c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+                0x0000000010006e98                strlen
  *(.fini)
- .fini          0x0000000010006edc        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
-                0x0000000010006edc                _fini
- .fini.__stub   0x0000000010006ee0       0xd0 linker stubs
+ .fini          0x0000000010006ef4        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+                0x0000000010006ef4                _fini
+ .fini.__stub   0x0000000010006ef8       0xd0 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -2116,139 +2117,140 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.eh_frame*)
- .eh_frame      0x0000000010006fb0        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x0000000010006fb0                . = ALIGN (0x4)
+ .eh_frame      0x0000000010006fc8        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000010006fc8                . = ALIGN (0x4)
 
-.glue_7         0x0000000010006fb0        0x0
- .glue_7        0x0000000010006fb0        0x0 linker stubs
+.glue_7         0x0000000010006fc8        0x0
+ .glue_7        0x0000000010006fc8        0x0 linker stubs
 
-.glue_7t        0x0000000010006fb0        0x0
- .glue_7t       0x0000000010006fb0        0x0 linker stubs
+.glue_7t        0x0000000010006fc8        0x0
+ .glue_7t       0x0000000010006fc8        0x0 linker stubs
 
-.vfp11_veneer   0x0000000010006fb0        0x0
- .vfp11_veneer  0x0000000010006fb0        0x0 linker stubs
+.vfp11_veneer   0x0000000010006fc8        0x0
+ .vfp11_veneer  0x0000000010006fc8        0x0 linker stubs
 
-.v4_bx          0x0000000010006fb0        0x0
- .v4_bx         0x0000000010006fb0        0x0 linker stubs
+.v4_bx          0x0000000010006fc8        0x0
+ .v4_bx         0x0000000010006fc8        0x0 linker stubs
 
-.iplt           0x0000000010006fb0        0x0
- .iplt          0x0000000010006fb0        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x0000000010006fc8        0x0
+ .iplt          0x0000000010006fc8        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x0000000010006fb0      0x564
+.rodata         0x0000000010006fc8      0x56c
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.on_uart_rx.str1.4
-                0x0000000010006fb0        0xc CMakeFiles/drone.dir/drone.c.obj
- .rodata.__bi_70.0
-                0x0000000010006fbc        0x8 CMakeFiles/drone.dir/drone.c.obj
+                0x0000000010006fc8       0x10 CMakeFiles/drone.dir/drone.c.obj
+ .rodata.__bi_76.0
+                0x0000000010006fd8        0x8 CMakeFiles/drone.dir/drone.c.obj
  .rodata.spin_lock_claim_unused.str1.4
-                0x0000000010006fc4       0x1b CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- *fill*         0x0000000010006fdf        0x1 
- .rodata.user_irq_claim_unused.str1.4
-                0x0000000010006fe0       0x1b CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010006fe0       0x1b CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
  *fill*         0x0000000010006ffb        0x1 
+ .rodata.user_irq_claim_unused.str1.4
+                0x0000000010006ffc       0x1b CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x0000000010007017        0x1 
  .rodata.hardware_alarm_claim.str1.4
-                0x0000000010006ffc       0x22 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x000000001000701e        0x2 
+                0x0000000010007018       0x22 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x000000001000703a        0x2 
  .rodata.panic.str1.4
-                0x0000000010007020       0x12 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- *fill*         0x0000000010007032        0x2 
+                0x000000001000703c       0x12 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ *fill*         0x000000001000704e        0x2 
  .rodata.hard_assertion_failure.str1.4
-                0x0000000010007034        0xc CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010007050        0xc CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata._ftoa.str1.4
-                0x0000000010007040       0x15 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x0000000010007055        0x3 
+                0x000000001000705c       0x15 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x0000000010007071        0x3 
  .rodata._vsnprintf
-                0x0000000010007058      0x1e0 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010007074      0x1e0 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x0000000010007254        0x4 
  .rodata.pow10.0
-                0x0000000010007238       0x50 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010007258       0x50 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .rodata.str1.4
-                0x0000000010007288       0x3c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100072a8       0x3c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_44
-                0x00000000100072c4        0xc CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100072e4        0xc CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_75
-                0x00000000100072d0        0xc CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100072f0        0xc CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_81
-                0x00000000100072dc        0xc CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100072fc        0xc CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.crlf_str.0
-                0x00000000100072e8        0x2 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x00000000100072ea        0x2 
+                0x0000000010007308        0x2 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x000000001000730a        0x2 
  .rodata.str1.4
-                0x00000000100072ec       0x2c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x000000001000730c       0x2c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.__bi_33.4
-                0x0000000010007318        0xc CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010007338        0xc CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.__bi_34.5
-                0x0000000010007324        0x8 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010007344        0x8 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata._resetd_driver
-                0x000000001000732c       0x18 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x000000001000734c       0x18 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .rodata.str1.4
-                0x0000000010007344       0x13 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- *fill*         0x0000000010007357        0x1 
+                0x0000000010007364       0x13 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ *fill*         0x0000000010007377        0x1 
  .rodata.__bi_182.0
-                0x0000000010007358        0xc CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010007378        0xc CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .rodata.str1.4
-                0x0000000010007364       0x2a CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- *fill*         0x000000001000738e        0x2 
+                0x0000000010007384       0x2a CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ *fill*         0x00000000100073ae        0x2 
  .rodata.usbd_desc_cfg
-                0x0000000010007390       0x54 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x00000000100073b0       0x54 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.usbd_desc_device
-                0x00000000100073e4       0x12 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- *fill*         0x00000000100073f6        0x2 
+                0x0000000010007404       0x12 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ *fill*         0x0000000010007416        0x2 
  .rodata.usbd_desc_str
-                0x00000000100073f8       0x18 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010007418       0x18 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.str1.4
-                0x0000000010007410       0x14 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010007430       0x14 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .rodata.str1.4
-                0x0000000010007424       0x49 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000010007444       0x49 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
                                          0x53 (size before relaxing)
- *fill*         0x000000001000746d        0x3 
+ *fill*         0x000000001000748d        0x3 
  .rodata.tud_task_ext
-                0x0000000010007470       0x8c CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010007490       0x8c CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .rodata._usbd_driver
-                0x00000000100074fc       0x18 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010007514                . = ALIGN (0x4)
+                0x000000001000751c       0x18 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010007534                . = ALIGN (0x4)
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x0000000010007514                . = ALIGN (0x4)
+                0x0000000010007534                . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000010007514                __exidx_start = .
+                0x0000000010007534                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x0000000010007514                __exidx_end = .
-                0x0000000010007514                . = ALIGN (0x4)
-                0x0000000010007514                __binary_info_start = .
+                0x0000000010007534                __exidx_end = .
+                0x0000000010007534                . = ALIGN (0x4)
+                0x0000000010007534                __binary_info_start = .
 
-.binary_info    0x0000000010007514       0x2c
+.binary_info    0x0000000010007534       0x2c
  *(.binary_info.keep.*)
- .binary_info.keep.__bi_ptr70
-                0x0000000010007514        0x4 CMakeFiles/drone.dir/drone.c.obj
+ .binary_info.keep.__bi_ptr76
+                0x0000000010007534        0x4 CMakeFiles/drone.dir/drone.c.obj
  .binary_info.keep.__bi_ptr22
-                0x0000000010007518        0x4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010007538        0x4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr30
-                0x000000001000751c        0x4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000753c        0x4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr38
-                0x0000000010007520        0x4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010007540        0x4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr44
-                0x0000000010007524        0x4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010007544        0x4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr50
-                0x0000000010007528        0x4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010007548        0x4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr75
-                0x000000001000752c        0x4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000754c        0x4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr81
-                0x0000000010007530        0x4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010007550        0x4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  *(.binary_info.*)
  .binary_info.__bi_ptr33
-                0x0000000010007534        0x4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010007554        0x4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .binary_info.__bi_ptr34
-                0x0000000010007538        0x4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010007558        0x4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .binary_info.__bi_ptr182
-                0x000000001000753c        0x4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x0000000010007540                __binary_info_end = .
+                0x000000001000755c        0x4 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010007560                __binary_info_end = .
 
-.rel.dyn        0x0000000010007540        0x0
- .rel.iplt      0x0000000010007540        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x0000000010007540                . = ALIGN (0x4)
+.rel.dyn        0x0000000010007560        0x0
+ .rel.iplt      0x0000000010007560        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000010007560                . = ALIGN (0x4)
 
 .ram_vector_table
                 0x0000000020000000       0xc0
@@ -2257,7 +2259,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x0000000020000000       0xc0 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x0000000020000000                ram_vector_table
 
-.data           0x00000000200000c0      0xe78 load address 0x0000000010007540
+.data           0x00000000200000c0      0xe78 load address 0x0000000010007560
                 0x00000000200000c0                __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -2400,36 +2402,36 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(.jcr)
                 0x0000000020000f38                . = ALIGN (0x4)
                 0x0000000020000f38                __data_end__ = .
-                0x0000000010007540                __etext = LOADADDR (.data)
+                0x0000000010007560                __etext = LOADADDR (.data)
 
 .tm_clone_table
-                0x0000000020000f38        0x0 load address 0x00000000100083b8
+                0x0000000020000f38        0x0 load address 0x00000000100083d8
  .tm_clone_table
                 0x0000000020000f38        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x0000000020000f38        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x0000000020000f38        0x0 load address 0x00000000100083b8
+.igot.plt       0x0000000020000f38        0x0 load address 0x00000000100083d8
  .igot.plt      0x0000000020000f38        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x0000000020000f38        0x0 load address 0x00000000100083b8
+                0x0000000020000f38        0x0 load address 0x00000000100083d8
                 0x0000000020000f38                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x0000000020040000        0x0 load address 0x00000000100083b8
+.scratch_x      0x0000000020040000        0x0 load address 0x00000000100083d8
                 0x0000000020040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x0000000020040000                . = ALIGN (0x4)
                 0x0000000020040000                __scratch_x_end__ = .
-                0x00000000100083b8                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x00000000100083d8                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x0000000020041000        0x0 load address 0x00000000100083b8
+.scratch_y      0x0000000020041000        0x0 load address 0x00000000100083d8
                 0x0000000020041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x0000000020041000                . = ALIGN (0x4)
                 0x0000000020041000                __scratch_y_end__ = .
-                0x00000000100083b8                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x00000000100083d8                __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .bss            0x0000000020000f38      0xd98
                 0x0000000020000f38                . = ALIGN (0x4)
@@ -2524,22 +2526,21 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x0000000020001cc6        0x1 CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .bss.boot2_copyout_valid
                 0x0000000020001cc7        0x1 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .bss.ch        0x0000000020001cc8        0x1 CMakeFiles/drone.dir/drone.c.obj
-                0x0000000020001cc8                ch
- .bss.claimed   0x0000000020001cc9        0x1 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .bss.claimed   0x0000000020001cc8        0x1 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .bss.irq_hander_chain_free_slot_head
-                0x0000000020001cca        0x1 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .bss.itf_num   0x0000000020001ccb        0x1 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000020001cc9        0x1 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .bss.itf_num   0x0000000020001cca        0x1 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .bss.low_priority_irq_num
-                0x0000000020001ccc        0x1 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000020001ccb        0x1 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .bss.one_shot_timer_pending
-                0x0000000020001ccd        0x1 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000020001ccc        0x1 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .bss.timer_callbacks_pending
-                0x0000000020001cce        0x1 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000020001ccd        0x1 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .bss.user_irq_claimed
-                0x0000000020001ccf        0x1 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000020001cce        0x1 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  *(COMMON)
                 0x0000000020001cd0                . = ALIGN (0x4)
+ *fill*         0x0000000020001ccf        0x1 
                 0x0000000020001cd0                __bss_end__ = .
 
 .heap           0x0000000020001cd0      0x800
@@ -2556,8 +2557,8 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(.stack*)
  .stack         0x0000000020041000      0x800 CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x00000000100083b8        0x0
-                0x00000000100083b8                PROVIDE (__flash_binary_end = .)
+.flash_end      0x00000000100083d8        0x0
+                0x00000000100083d8                PROVIDE (__flash_binary_end = .)
                 0x0000000020040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x0000000020041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x0000000020042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -2637,7 +2638,7 @@ LOAD CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/tusb.c.obj
 LOAD CMakeFiles/drone.dir/home/austin/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 LOAD CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 LOAD CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
-LOAD /tmp/ccDHkXHt.o
+LOAD /tmp/cc6WEqcT.o
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -2757,7 +2758,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x0000000000000800       0x2c CMakeFiles/drone.dir/home/austin/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
  .ARM.attributes
-                0x000000000000082c       0x22 /tmp/ccDHkXHt.o
+                0x000000000000082c       0x22 /tmp/cc6WEqcT.o
  .ARM.attributes
                 0x000000000000084e       0x1e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes
