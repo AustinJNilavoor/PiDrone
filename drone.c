@@ -22,18 +22,11 @@ int main()
     // Set datasheet for more information on function select
     gpio_set_function(UART_TX_PIN, GPIO_FUNC_UART);
     gpio_set_function(UART_RX_PIN, GPIO_FUNC_UART);
-    uint8_t buff[11];
+    uint8_t ch;
     while (1)
     {
-        if (uart_is_readable(UART_ID))
-        {
-            uart_read_blocking 	(UART_ID,buff,10);
-        }
-        
-        // ch = uart_getc(UART_ID);
-        buff[10] = '\n';
-        printf("%s\n",buff);
-        /* code */
+        ch = uart_getc(UART_ID);
+        printf("%c\n", ch);
         sleep_us(100);
     }
 }
