@@ -26,13 +26,13 @@ int16_t acceleration[3], gyro[3];
 uint8_t ch;
 static void on_uart_rx()
 {
-    uint8_t buff[12];
+    uint8_t buff[14];
 printf("start");
         if (uart_is_readable(UART_ID))
         {
-            uart_read_blocking 	(UART_ID,buff,11);
+            uart_read_blocking 	(UART_ID,buff,13);
         }
-        buff[11] = '\n';
+        buff[13] = '\n';
     // ch = uart_getc(UART_ID);
     printf("%s", buff);
     printf("stp");
