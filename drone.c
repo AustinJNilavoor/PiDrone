@@ -20,6 +20,7 @@
 #define UART_RX_PIN 1
 
 int main() {
+    stdio_init_all();
     // Set up our UART with the required speed.
     uart_init(UART_ID, BAUD_RATE);
 
