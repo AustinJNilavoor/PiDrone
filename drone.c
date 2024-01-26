@@ -40,7 +40,7 @@ int main() {
 
     // Send out a string, with CR/LF conversions
     uart_puts(UART_ID, " Hello, UART!\n");
-    char ch;
+    uint8_t ch;
     while (1)
     {
         ch = uart_getc(UART_ID);
