@@ -36,7 +36,7 @@ int main()
 
     // Now enable the UART to send interrupts - RX only
     uart_set_irq_enables(UART_ID, true, false);
-uint8_t c = 0;
+uint32_t c = 0;
     while (1)
     {
         printf("Non intrep %d\n",c);
