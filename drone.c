@@ -41,6 +41,6 @@ uint8_t c = 0;
     {
         printf("Non intrep %d\n",c);
         c++;
-        sleep_us(1000);
+        sleep_us(50000);
     }
 }
