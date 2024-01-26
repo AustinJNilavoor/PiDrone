@@ -32,7 +32,7 @@ int main()
     while (1)
     {
         ch = uart_getc(UART_ID);
-        printf("%c \n", ch);
+        printf("%c", ch);
         sleep_us(100);
     }
 }
