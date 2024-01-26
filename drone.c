@@ -37,7 +37,7 @@ int main() {
         }
         
         // ch = uart_getc(UART_ID);
-        printf("%s ee\n",buff);
+        printf("%c %c %c 33\n",buff[0],buff[1],buff[2]);
         /* code */
     }
     
