@@ -39,7 +39,7 @@ int main()
 
     while (1)
     {
-        printf("Non intrep");
+        printf("Non intrep\n");
         sleep_us(100);
     }
 }
