@@ -26,16 +26,29 @@ int16_t acceleration[3], gyro[3];
 uint8_t ch;
 static void on_uart_rx()
 {
+
+
+
+// 
+// Calculate buff size
+// standardize data
+// remove unwanted data
+// increase baud rate
+// fix time for data send
+// 
+
+
+
+
+
     uint8_t buff[14];
-printf("start");
-        if (uart_is_readable(UART_ID))
-        {
-            uart_read_blocking 	(UART_ID,buff,13);
-        }
-        buff[13] = '\n';
+    if (uart_is_readable(UART_ID))
+    {
+        uart_read_blocking(UART_ID, buff, 13);
+    }
+    buff[13] = '\n';
     // ch = uart_getc(UART_ID);
     printf("%s", buff);
-    printf("stp");
 }
 
 static void mpu6050_reset()
@@ -94,9 +107,9 @@ int main()
     uart_setup();
     while (1)
     {
-        // mpu6050_read_raw(acceleration, gyro);
-        // printf("Acc. X = %d, Y = %d, Z = %d\n", acceleration[0], acceleration[1], acceleration[2]);
-        // printf("Gyro. X = %d, Y = %d, Z = %d\n", gyro[0], gyro[1], gyro[2]);
+        mpu6050_read_raw(acceleration, gyro);
+        printf("Acc. X = %d, Y = %d, Z = %d\n", acceleration[0], acceleration[1], acceleration[2]);
+        printf("Gyro. X = %d, Y = %d, Z = %d\n", gyro[0], gyro[1], gyro[2]);
         sleep_us(100);
     }
 }
