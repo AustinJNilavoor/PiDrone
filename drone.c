@@ -40,10 +40,11 @@ int main() {
 
     // Send out a string, with CR/LF conversions
     uart_puts(UART_ID, " Hello, UART!\n");
-
+    char ch;
     while (1)
     {
-        printf("FFF");
+        ch = uart_getc(UART_ID);
+        printf("%c \n",ch);
         /* code */
     }
     
