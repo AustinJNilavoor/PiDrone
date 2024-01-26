@@ -40,6 +40,6 @@ int main()
     while (1)
     {
         printf("Non intrep\n");
-        sleep_us(100);
+        sleep_us(1000);
     }
 }
