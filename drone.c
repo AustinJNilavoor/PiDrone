@@ -41,12 +41,12 @@ static void on_uart_rx()
 
 
 
-    uint8_t buff[14];
+    uint8_t buff[13];
     if (uart_is_readable(UART_ID))
     {
-        uart_read_blocking(UART_ID, buff, 13);
+        uart_read_blocking(UART_ID, buff, 12);
     }
-    buff[13] = '\n';
+    buff[12] = '\n';
     // ch = uart_getc(UART_ID);
     printf("%s", buff);
 }
